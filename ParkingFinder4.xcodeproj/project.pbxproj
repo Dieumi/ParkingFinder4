@@ -16,6 +16,8 @@
 		ECB2B4011ECD9B6A008AA59C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B4001ECD9B6A008AA59C /* GoogleService-Info.plist */; };
 		ECB2B4041ECDAABF008AA59C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B4021ECDAABF008AA59C /* AuthViewController.swift */; };
 		ECB2B4051ECDAABF008AA59C /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B4031ECDAABF008AA59C /* AuthViewController.xib */; };
+		ECB2B4081ECDB1D5008AA59C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B4061ECDB1D5008AA59C /* SignUpViewController.swift */; };
+		ECB2B4091ECDB1D5008AA59C /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B4071ECDB1D5008AA59C /* SignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		ECB2B4001ECD9B6A008AA59C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECB2B4021ECDAABF008AA59C /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		ECB2B4031ECDAABF008AA59C /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		ECB2B4061ECDB1D5008AA59C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		ECB2B4071ECDB1D5008AA59C /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		F1612A060CE87D341BF22A7A /* Pods-ParkingFinder4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingFinder4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkingFinder4/Pods-ParkingFinder4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +97,8 @@
 				ECB2B3FA1ECD9401008AA59C /* Info.plist */,
 				ECB2B4021ECDAABF008AA59C /* AuthViewController.swift */,
 				ECB2B4031ECDAABF008AA59C /* AuthViewController.xib */,
+				ECB2B4061ECDB1D5008AA59C /* SignUpViewController.swift */,
+				ECB2B4071ECDB1D5008AA59C /* SignUpViewController.xib */,
 			);
 			path = ParkingFinder4;
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 				ECB2B4011ECD9B6A008AA59C /* GoogleService-Info.plist in Resources */,
 				ECB2B4051ECDAABF008AA59C /* AuthViewController.xib in Resources */,
 				ECB2B3F61ECD9401008AA59C /* Assets.xcassets in Resources */,
+				ECB2B4091ECDB1D5008AA59C /* SignUpViewController.xib in Resources */,
 				ECB2B3F41ECD9401008AA59C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +231,7 @@
 			files = (
 				ECB2B3F11ECD9401008AA59C /* ViewController.swift in Sources */,
 				ECB2B4041ECDAABF008AA59C /* AuthViewController.swift in Sources */,
+				ECB2B4081ECDB1D5008AA59C /* SignUpViewController.swift in Sources */,
 				ECB2B3EF1ECD9401008AA59C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

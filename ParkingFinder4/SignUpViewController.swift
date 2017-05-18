@@ -1,5 +1,5 @@
 //
-//  AuthViewController.swift
+//  SignUpViewController.swift
 //  ParkingFinder4
 //
 //  Created by Etudiant on 18/05/2017.
@@ -7,13 +7,13 @@
 //
 
 import UIKit
-import Firebase
-class AuthViewController: UIViewController {
 
-    @IBOutlet var signup: UIButton!
+class SignUpViewController: UIViewController {
+
     @IBOutlet var login: UITextField!
     @IBOutlet var password: UITextField!
-    @IBOutlet var connect: UIButton!
+    @IBOutlet var cpassword: UITextField!
+    @IBOutlet var confirbutton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,9 +25,7 @@ class AuthViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func goSignUp(_ sender: Any){
-        let secondController = 
-    }
+
     /*
     // MARK: - Navigation
 
