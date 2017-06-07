@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D21DBF266C1D1D3B420F0927 /* Pods_ParkingFinder4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F4759176DE9511AB72AE3F /* Pods_ParkingFinder4.framework */; };
+		EC81C1391EE82DAB001E8899 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC81C1381EE82DAB001E8899 /* GoogleService-Info.plist */; };
 		ECB2B3EF1ECD9401008AA59C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B3EE1ECD9401008AA59C /* AppDelegate.swift */; };
 		ECB2B3F11ECD9401008AA59C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B3F01ECD9401008AA59C /* ViewController.swift */; };
 		ECB2B3F41ECD9401008AA59C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B3F21ECD9401008AA59C /* Main.storyboard */; };
 		ECB2B3F61ECD9401008AA59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B3F51ECD9401008AA59C /* Assets.xcassets */; };
 		ECB2B3F91ECD9401008AA59C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B3F71ECD9401008AA59C /* LaunchScreen.storyboard */; };
-		ECB2B4011ECD9B6A008AA59C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B4001ECD9B6A008AA59C /* GoogleService-Info.plist */; };
 		ECB2B4041ECDAABF008AA59C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B4021ECDAABF008AA59C /* AuthViewController.swift */; };
 		ECB2B4051ECDAABF008AA59C /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B4031ECDAABF008AA59C /* AuthViewController.xib */; };
 		ECB2B4081ECDB1D5008AA59C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B4061ECDB1D5008AA59C /* SignUpViewController.swift */; };
@@ -23,6 +23,7 @@
 /* Begin PBXFileReference section */
 		30F4759176DE9511AB72AE3F /* Pods_ParkingFinder4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkingFinder4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF6959FFAA0C40CABF217A5 /* Pods-ParkingFinder4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingFinder4.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkingFinder4/Pods-ParkingFinder4.release.xcconfig"; sourceTree = "<group>"; };
+		EC81C1381EE82DAB001E8899 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECB2B3EB1ECD9401008AA59C /* ParkingFinder4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingFinder4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB2B3EE1ECD9401008AA59C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECB2B3F01ECD9401008AA59C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		ECB2B3F51ECD9401008AA59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECB2B3F81ECD9401008AA59C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECB2B3FA1ECD9401008AA59C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECB2B4001ECD9B6A008AA59C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECB2B4021ECDAABF008AA59C /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		ECB2B4031ECDAABF008AA59C /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 		ECB2B4061ECDB1D5008AA59C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		ECB2B3ED1ECD9401008AA59C /* ParkingFinder4 */ = {
 			isa = PBXGroup;
 			children = (
-				ECB2B4001ECD9B6A008AA59C /* GoogleService-Info.plist */,
+				EC81C1381EE82DAB001E8899 /* GoogleService-Info.plist */,
 				ECB2B3EE1ECD9401008AA59C /* AppDelegate.swift */,
 				ECB2B3F01ECD9401008AA59C /* ViewController.swift */,
 				ECB2B3F21ECD9401008AA59C /* Main.storyboard */,
@@ -166,11 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB2B3F91ECD9401008AA59C /* LaunchScreen.storyboard in Resources */,
-				ECB2B4011ECD9B6A008AA59C /* GoogleService-Info.plist in Resources */,
 				ECB2B4051ECDAABF008AA59C /* AuthViewController.xib in Resources */,
 				ECB2B3F61ECD9401008AA59C /* Assets.xcassets in Resources */,
 				ECB2B4091ECDB1D5008AA59C /* SignUpViewController.xib in Resources */,
 				ECB2B3F41ECD9401008AA59C /* Main.storyboard in Resources */,
+				EC81C1391EE82DAB001E8899 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

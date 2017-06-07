@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class SignUpViewController: UIViewController {
 
     @IBOutlet var login: UITextField!
@@ -15,6 +15,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet var cpassword: UITextField!
     @IBOutlet var confirbutton: UIButton!
     override func viewDidLoad() {
+        //FirebaseApp.configure()
+        confirbutton.addTarget(self, action:#selector(goSignUp(_:)) , for: .touchUpInside)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -23,6 +25,26 @@ class SignUpViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+   @IBAction func goSignUp(_ sender: Any){
+        print(login.text!)
+        print(password.text!)
+    Auth.auth().createUser(withEmail: login.text!, password: password.text!){(user, error) in
+        if error == nil {
+            //registration successful
+            print(user)
+
+        }else{
+            //registration failure
+            print(error)
+
+        }
+        
+    }
+    
+        
+        print("test")
+        
     }
     
 

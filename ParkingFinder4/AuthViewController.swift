@@ -8,13 +8,20 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
 class AuthViewController: UIViewController {
 
     @IBOutlet var signup: UIButton!
+    @IBOutlet var google: GIDSignInButton!
     @IBOutlet var login: UITextField!
     @IBOutlet var password: UITextField!
     @IBOutlet var connect: UIButton!
+    var window: UIWindow?
     override func viewDidLoad() {
+
+        signup.addTarget(self, action:#selector(goSignUp(_:)) , for: .touchUpInside)
+        connect.addTarget(self, action: #selector(goConnect(_:)), for: .touchUpInside)
+       // google.addTarget(self, action: #selector(googleSign(_:)), for: .touchUpInside)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -26,7 +33,54 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction func goSignUp(_ sender: Any){
-        let secondController = 
+        let secondController = SignUpViewController(nibName:"SignUpViewController",bundle: nil)
+        let navController = UINavigationController(rootViewController: secondController)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        print("test")
+      
+    }
+    @IBAction func goConnect(_ sender: Any){
+        let secondController = SignUpViewController(nibName:"SignUpViewController",bundle: nil)
+        let navController = UINavigationController(rootViewController: secondController)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        print("test")
+        
+    }
+    @IBAction func googleSign(_ sender: Any){
+        let secondController = SignUpViewController(nibName:"SignUpViewController",bundle: nil)
+        let navController = UINavigationController(rootViewController: secondController)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        print("test")
+        
+    }
+   
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+        print("testgoogle")
+        if let error = error {
+            // ...
+            return
+        }
+        
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,accessToken: authentication.accessToken)
+        Auth.auth().signIn(with: credential){(user, error) in
+            if error == nil {
+                
+                print(user)
+                
+            }else{
+                print(error)
+                
+            }
+        }
+    
+        // ...
     }
     /*
     // MARK: - Navigation
